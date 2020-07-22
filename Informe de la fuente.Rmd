@@ -29,17 +29,17 @@ Mediante la revisión de literatura con palabras claves como *Econometric
 Modeling*, *Modelos de Series T emporales* y *Modelos de Cortes T rasversales*
 se encontró una diversidad de planteamientos y consideraciones en este tipo de investigaciones por parte de (Hanns de la Fuente) y otros autores en otros países, así como su aplicación en distintas áreas. La plataforma científica que se utilizo fue web of science dando como resultado mas de 400 papers relacionados y publicaciones  en revistas; de los cuales 175 son de EEUU, 18  c son investigaciones provenientes de china, etc.
 
-```{r message=FALSE, warning=FALSE, include=FALSE }
+```{r out.width='50%', message=FALSE, warning=FALSE, include=FALSE }
 library(bibliometrix)   
 file <- "base.txt"
 M <- convert2df(file, dbsource = "wos", format = "plaintext")
-head(M["TC"])
+# head(M["TC"])
 results <- biblioAnalysis(M, sep = ";")
 summary(results, k=10, pause=F, width=130)
 
 ```
 
-```{r message=FALSE, warning=FALSE}
+```{r out.width='50%', message=FALSE, warning=FALSE}
 
 plot(x=results, k=10, pause=F)
 ```
