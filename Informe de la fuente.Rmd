@@ -48,7 +48,6 @@ plot(x=results, k=10, pause=F)
 topAU <- authorProdOverTime(M, k = 10, graph = TRUE)
 ```
 
-
 Una gran parte de las áreas temáticas en las que están enfocadas estas investigaciones para mencionar solo algunas son: Ciencias Sociales Aplicadas con 126 publicaciones, Humanidades con 17, Ingenieríıas con 16, Ciencias Agrícolas con 9, Ciencias de la Salud 6, Ciencias Biológicas y Ciencias Exactas y de la Tierra con 4 publicaciones respectivamente.
 También en dicha plataforma se lograron visualizar que los idiomas en los
 que prevalece este tipo de investigación son en Español, Inglés y Portugués. En los graficos 
