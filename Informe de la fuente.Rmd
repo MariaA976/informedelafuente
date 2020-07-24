@@ -94,10 +94,10 @@ como Simple, Holt, Brown y Damped Trend, y el pronóstico estocástico utilizó 
 Este modelo $ARIMA(p, d, q)$, viene daro por:
 
 \begin{eqnarray}
-\hat{y}_{t}=\phi_{0}+\sum_{i=1}^{p}\phi_\phi_{i}y_{t-1}-\sum_{i=1}^{q}\theta_{i}\epsilon_{t-1}+\epsilon_{t}
+\hat{y}_{t}=\phi_{0}+\sum_{i=1}^{p}\phi_{i}y_{t-1}-\sum_{i=1}^{q}\theta_{i}\epsilon_{t-1}+\epsilon_{t}
 \end{eqnarray}
 	
-Donde
+	Donde
 	
 \begin{eqnarray*}
 	y_{t}=Y_{t} \mbox{for d=0}\\
@@ -125,7 +125,7 @@ estudio no se había realizado antes ya que comprende todo el sistema complejo d
 un país y se intenta modelar ciertos aspectos solo con 4 variables determinadas
 como las de interés para el objetivo final de la investigación.
 
-
+%graficos tizk
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
