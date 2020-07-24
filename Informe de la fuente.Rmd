@@ -20,14 +20,17 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Introducción
-En el presente informe VIII del seminario EII del doctorado en Ingeniería Industrial de la Pontificia Universidad Católica de Valparaíso se analizaran 3 trabajos de investigación relacionados con modelos econométricos, como a través de ellos y del uso de sus herramientas estos modelos permiten resolver problemas sociales, es decir  @de_la_fuente-mella_econometric_2020 analiza que por medio del uso de las herramientas econométricas cuantitativas se puede dar solución a algunos problemas de la vida real. Mejorando considerablemente la calidad de vida de las personas en una comunidad, ya sea respecto al manejo de los recursos, seguridad vial y toma de decisiones en las crisis económicas financieras.
+
+En el presente informe V III del seminario EII del doctorado en Ingeniería Industrial de la Pontificia Universidad Católica de Valparaíso se analizaran 3 trabajos de investigación relacionados con modelos econométricos, como a travé s de ellos y del uso de sus herramientas estos modelos permiten resolver problemas sociales, es decir, @de_la_fuente-mella_econometric_2020 analiza que por medio del uso de las herramientas econométricas cuantitativas se puede dar solución a algunos problemas de la vida real. Mejorando considerablemente la calidad de vida de las personas en una comunidad, ya sea respecto al manejo de los recursos, seguridad vial y toma de decisiones en las crisis económicas financieras.
 
 # Análisis de la literatura Relacionada
-De los 80 en adelante se empezó a estudiar seriamente problemáticas asociados a estas investigaciones. Los modelos econométricos son posiblemente la especificación económica más determinada para analizar el efecto o impacto de un cambio sobre un sistema social.  @de_la_fuente-mella_econometric_2020
 
-Mediante la revisión de literatura con palabras claves como *Econometric
-Modeling*, *Modelos de Series T emporales* y *Modelos de Cortes T rasversales*
-se encontró una diversidad de planteamientos y consideraciones en este tipo de investigaciones por parte de (Hanns de la Fuente) y otros autores en otros países, así como su aplicación en distintas áreas. La plataforma científica que se utilizo fue web of science dando como resultado mas de 400 papers relacionados y publicaciones  en revistas; de los cuales 175 son de EEUU, 18  c son investigaciones provenientes de china, etc.
+De los 80 en adelante se empezó a estudiar seriamente problemáticas asociados a estas investigaciones. Los modelos econométricos son posiblemente la especificación económica más determinada para analizar el efecto o impacto de un cambio sobre un sistema social  @de_la_fuente-mella_econometric_2020 .
+Mediante la revisión de literatura con palabras claves como *Econometric ”Modeling*, *Modelos de Series Temporales* y *Modelos de Cortes Trasversales* se encontró una diversidad de planteamientos y consideraciones en este tipo de investigaciones por parte de (Hanns de la Fuente) y otros autores en otros países,
+así como su aplicación  en distintas áreas. La plataforma científica que se utilizo fue web of science dando como resultado mas de 400 papers relacionados y publicaciones en revistas; de los cuales 175 son de EEUU, 18 son investigaciones provenientes de china, etc.
+
+Una gran parte de las áreas temáticas en las que están enfocadas estas investigaciones para mencionar solo algunas son: Ciencias Sociales Aplicadas, Humanidades, Ingenierías, Ciencias Agrícolas, Ciencias de la Salud, Ciencias Biológicas y Ciencias Exactas y de la Tierra publicadas respectivamente.
+
 
 ```{r out.width='50%', message=FALSE, warning=FALSE, include=FALSE }
 library(bibliometrix)   
@@ -44,32 +47,22 @@ summary(results, k=10, pause=F, width=130)
 plot(x=results, k=10, pause=F)
 ```
 
-```{r}
-topAU <- authorProdOverTime(M, k = 10, graph = TRUE)
-```
+En la figuras  anteriores se puede evidenciar los autores más productivos en esta línea de investigación, así como el número de artículos publicados por cada uno,  ademas con respecto a la producción científica encontramos que  la mayor producción científica se encuentra en Estados Unidos comparativamente con el resto de los países, correspondiente al número de artículos publicados de un solo país (SCP) y por múltiples países (MCP).Note que desde 1975 a 2019 se evidencia un aumento considerable en la producción científica anual de artículos relacionados, hay un aumento promedio de citas de artículos desde 1977 a 1979, para luego decaer considerablemente. Este comportamiento continuo en años siguientes. Pero note que en 2019 este número de citaciones excede el de los años anteriores, Para el promedio total de citaciones por año, hay un aumento promedio considerable desde 1977 a 1979 con más de 225 citas, en comparación con los años posteriores.
 
-Una gran parte de las áreas temáticas en las que están enfocadas estas investigaciones para mencionar solo algunas son: Ciencias Sociales Aplicadas con 126 publicaciones, Humanidades con 17, Ingenieríıas con 16, Ciencias Agrícolas con 9, Ciencias de la Salud 6, Ciencias Biológicas y Ciencias Exactas y de la Tierra con 4 publicaciones respectivamente.
-También en dicha plataforma se lograron visualizar que los idiomas en los
-que prevalece este tipo de investigación son en Español, Inglés y Portugués. En los graficos 
-notamos que el estudio en esta area ha sido bastante oscilate pero se observa un  crecimiento a lo largo de los años ha sido notorio en este ramo, note que la importancia que tiene para el mundo actualmente investigaciones relacionadas con las palabras clave. Pero en 2019 pese a que aún tiene un grado alto de publicaciones importantes en 2020 decae precipitadamente.
+
+
 
 # Marco Teórico (Descripción General)
 
 ## Planteamiento del Problema
 
-En Chile, los ayuntamientos son fundamentales para la descentralización del
-país, puesto que representa un camino para estar más conectado con las personas, sus problemas, necesidades y deseos. Por lo anterior, los elementos que lo
-hacen eficiente y mejoran la calidad de vida de los ciudadanos son esenciales. Hay
-346 ayuntamientos en Chile que pertenecen a las diferentes comunas, pero para
-la investigación se seleccionaron los que tienen más de 50,000 habitantes y que
-pertenecen a las capitales regionales con características diferentes.
+En Chile, los ayuntamientos son fundamentales para la descentralización del país, puesto que representa un camino para estar más conectado con las personas, sus problemas, necesidades y deseos. Por lo anterior, los elementos que lo hacen eficiente y mejoran la calidad de vida de los ciudadanos son esenciales. Hay 346 ayuntamientos en Chile que pertenecen a las diferentes comunas, pero para la investigación se seleccionaron los que tienen más de 50,000 habitantes y que pertenecen a las capitales regionales con características diferentes.
 
-De la presente investigación nos centraremos principalmente en como a partir
-de estos modelos se pueden llegar a medir, cuantificar muchos problemas de tipo
-social y real llegando inclusive a poder predecir al final de las investigaciones.
+De la presente investigación nos centraremos principalmente en como a partir de estos modelos se pueden llegar a medir, cuantificar muchos problemas de tipo social y real, llegando inclusive a poder predecir al final de las investigaciones.\\
 
-
-- **En el caso 1 (Analysis of the Factors of Chilean City Hall Using Econometric Modeling and Stochastic Frontier)**,  se desarrolló un modelo econométrico que explicaba los factores determinados para la eficiencia del ayuntamiento en Chile, es decir, se diseñó un modelo que es capaz de determinar los factores que influyen en la eficiencia del ayuntamiento en función del índice de calidad de vida de las ciudades (bajo ciertas circunstancias) y muestra los aspectos que requieren atención especial en las nuevas políticas públicas sobre la gestión del Ayuntamiento. Se utilizaron modelos de regresión, paso a paso, ClusterDendogram jerárquico y cluster k-means para conocer por medio del análisis de eficiencia cuales eran las variables que permitirían mejorar la calidad de vida dentro de las municipalidades. Los datos con los que se trabajó en la investigación fueron tomados de <http://datos.gob.cl/https://reportescomunales.bcn.cl/>, en la Figura 1, se observa los 6 modelos de regresión ajustado. 
+- **En el caso 1 (Analysis of the Factors of Chilean City Hall Using Econometric Modeling and Stochastic Frontier)**,  se desarrolló un modelo econométrico que explicaba los factores determinados para la eficiencia del ayuntamiento en Chile, es decir, se diseñó un modelo que es capaz de determinar los factores que influyen en la eficiencia del ayuntamiento en función del
+índice de calidad de vida de las ciudades (bajo ciertas circunstancias) y muestra los aspectos que requieren atención especial en las nuevas políticas públicas sobre la gestión del
+Ayuntamiento. Se utilizaron modelos de regresión, paso a paso, Cluster-Dendogram jerárquico y cluster k-means para conocer por medio del análisis de eficiencia cuales eran las variables que permitirían mejorar la calidad de vida dentro de las municipalidades. Los datos con los que se trabajó en la investigación fueron tomados de <http://datos.gob.cl/https://reportescomunales.bcn.cl/>, en la Figura 1, se observa los 6 modelos de regresión ajustado. 
 
 
 
@@ -79,8 +72,9 @@ social y real llegando inclusive a poder predecir al final de las investigacione
 \caption{Regression Models-Stepwise}
 \end{figure}
 
-- **En el caso 2 Forecasting Performance Measures for Traffic Safety using Deterministic and Stochastic Models**  en 2012 Barack Obama aprobó la ley *(Map-21)*, <https://www.fhwa.dot.gov/map21/> donde se destinaron elevados recursos en millones de dólares para el estudio de todo el sistema de trasporte de Estados Unidos, en donde se tenían que tener en cuenta ciertos aspectos que se debían modelar como mejoramiento de seguridad vial, trafico etc.  @paz_forecasting_2015 Los datos utilizados de 2001 a 2014 fueron anualmente e igualmente espaciados.
-Las variables que se tuvieron en cuenta son:
+- **En el caso 2 Forecasting Performance Measures for Traffic Safety using Deterministic and Stochastic Models**  en 2012 Barack Obama aprobó la ley *(Map-21)*, <https://www.fhwa.dot.gov/map21/> ddonde se destinaron elevados recursos en millones de dólares para el estudio de todo el sistema de trasporte de Estados Unidos, en donde se tenían que tener en cuenta ciertos aspectos que se debían modelar como mejoramiento de seguridad vial, trafico etc.  @paz_forecasting_2015  Los datos utilizados de 2001 a 2014 fueron anualmente e igualmente espaciados. 
+
+Las variables que se tuvieron en cuenta son: 
 - La cantidad de muertes
 -La cantidad de lesiones graves
 - Muertes por vehículo Millas recorridas (VMT)
@@ -88,8 +82,7 @@ Las variables que se tuvieron en cuenta son:
 
 El problema que se debía modelar es **¿Qué metodología utilizar, según los DOT estatales, para pronosticar medidas de desempeño de seguridad a fin de establecer objetivos para la reducción de muertes y lesiones graves y alcanzar los objetivos de la política MAP-21?**
 
-Con el objetivo de facilitar la gestión financiera y la toma de decisiones asociadas a el problema anterior se utilizaron métodos de pronóstico deterministas
-como Simple, Holt, Brown y Damped Trend, y el pronóstico estocástico utilizó $ARIMA(p, d, q)$.
+on el objetivo de facilitar la gestión financiera y la toma de decisiones asociadas a el problema anterior se utilizaron  métodos de pronóstico deterministas como Simple, Holt, Brown y Damped Trend, y el pronóstico estocástico utilizó $ARIMA(p, d, q)$.
 
 Este modelo $ARIMA(p, d, q)$, viene daro por:
 
@@ -110,20 +103,11 @@ divulgación dada por las empresas al mercado de capitales. Para llevar a cabo e
 
 ## Contribución del Trabajo
 
-Existen muchos problemas asociados a fenómenos de la vía real que se pueden
-solucionar utilizando modelos econométricos y ciertas herramientas de tipo matemático. Además de esto la primera investigación nos permite contrastar entre
-diferentes ayuntamientos (Norte, Centro y Sur) para así conocer los factores que
-determinan y afectan la eficiencia de las municipalidades de acuerdo al uso de
-los recursos (lo que finalmente afecta tanto de manera positiva como negativa la
-calidad de vida de las personas).
-Para el segundo caso @fuente-mella_econometric_2013 que va como hacia la misma línea de investigación,
-se evidencia como resultado que los métodos Simple y Holt proporcionaron un
-pronóstico adecuado para el 28% de los casos. Marrón este método proporcionó
-un pronóstico adecuado para el 44% de los casos. Sin embargo, el proceso estocástico, el método ARIMA, no encontró una bondad de ajuste aceptable. Pero
-es algo que se puede mejorar si se decide modelar grandes conjuntos de datos. Este
-estudio no se había realizado antes ya que comprende todo el sistema complejo de
-un país y se intenta modelar ciertos aspectos solo con 4 variables determinadas
-como las de interés para el objetivo final de la investigación.
+Existen muchos problemas asociados a fenómenos de la vía real que se pueden solucionar utilizando modelos econométricos y ciertas herramientas de tipo matemático. Además de esto la primera investigación nos permite contrastar entre diferentes ayuntamientos (Norte, Centro y Sur) para así conocer los factores que determinan y afectan la eficiencia de las municipalidades de acuerdo al uso de los recursos (lo que finalmente afecta tanto de manera positiva como negativa la calidad de vida de las personas).
+
+Para el segundo caso algo parecido al anterior, @fuente-mella_econometric_2013 se evidencia como resultado que los métodos Simple y Holt proporcionaron un pronóstico adecuado para el $28\%$ de los casos. Marrón este método proporcionó un pronóstico adecuado para el $44\%$ de los casos. Sin embargo, el proceso estocástico, el método ARIMA, no encontró una bondad de ajuste aceptable. Pero es algo que se puede mejorar si se decide modelar grandes conjuntos de datos. Este estudio no se había realizado antes ya que comprende todo el sistema complejo de un país y se intenta modelar ciertos aspectos solo con 4 variables determinadas como las de interés para el objetivo final de la investigación.
+
+
 
 %graficos tizk
 
@@ -169,10 +153,9 @@ como las de interés para el objetivo final de la investigación.
 
 
 ## Comentario Adicional
-Se podría incluir en un nuevo trabajo como extensión del caso 2 nuevas variables y determinar si influyen de manera significativa en el modelo o si definitivamente el modelo debe tener solo 4 variables de decisión.
-También a través de la misma línea de investigación y de estos modelos estudiar el impacto que puede generar un cambio en la forma como se utilizan y se aprovechan los recursos de las municipalidades. Luego después de esto analizar si hay un cambio en el manejo de las políticas públicas que tipo de efecto causa en el sistema.
+Se podría incluir en un nuevo trabajo como extensión del caso 2 nuevas variables y determinar si influyen de manera significativa en el modelo o si definitivamente el modelo debe tener solo 4 variables de decisión. 
 
-
+También a través de la misma línea de investigación y de estos modelos se podría estudiar el impacto que puede generar un cambio en la forma como se utilizan y se aprovechan los recursos de las municipalidades. Luego después de esto analizar si hay un cambio en el manejo de las políticas públicas y que tipo de efecto causa en el sistema.
 
 # References
 
