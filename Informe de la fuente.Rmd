@@ -50,8 +50,6 @@ plot(x=results, k=10, pause=F)
 En la figuras  anteriores se puede evidenciar los autores más productivos en esta línea de investigación, así como el número de artículos publicados por cada uno,  ademas con respecto a la producción científica encontramos que  la mayor producción científica se encuentra en Estados Unidos comparativamente con el resto de los países, correspondiente al número de artículos publicados de un solo país (SCP) y por múltiples países (MCP).Note que desde 1975 a 2019 se evidencia un aumento considerable en la producción científica anual de artículos relacionados, hay un aumento promedio de citas de artículos desde 1977 a 1979, para luego decaer considerablemente. Este comportamiento continuo en años siguientes. Pero note que en 2019 este número de citaciones excede el de los años anteriores, Para el promedio total de citaciones por año, hay un aumento promedio considerable desde 1977 a 1979 con más de 225 citas, en comparación con los años posteriores.
 
 
-
-
 # Marco Teórico (Descripción General)
 
 ## Planteamiento del Problema
